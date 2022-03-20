@@ -3,15 +3,12 @@
 // Definición de funciones
 int elevarAlCuadrado(int num);
 void elevarAlCuadradoVoid(int *num);
+void mostrarInfo(int var);
 
 void main() {
-    int num = 4;
+    int num = 2;
 
-    printf("El numero es: %d\n", num);
-
-    elevarAlCuadradoVoid(&num);
-
-    printf("Y su cuadrado es: %d\n", num);
+    mostrarInfo(num);
 };
 
 // Declaración de funciones
@@ -21,4 +18,9 @@ int elevarAlCuadrado(int num) {
 
 void elevarAlCuadradoVoid(int *num) {
     *num = (*num) * (*num);
+};
+
+void mostrarInfo(int var) {
+    printf("La dirección de memoria de la variable es: %p \n", &var);
+    printf("El contenido de la variable es: %d \n", var);
 };
