@@ -25,7 +25,7 @@ int elevarAlCuadrado(int num) {
 };
 
 void elevarAlCuadradoVoid(int *num) {
-    *num = (*num) * (*num);
+    *num = elevarAlCuadrado(*num);
 };
 
 void mostrarInfo(int var) {
@@ -41,8 +41,6 @@ void invertir(int *a, int *b) {
 
 void orden(int *a, int *b) {
     if (*a > *b) {
-        int c = *a;
-        *a = *b;
-        *b = c;
+        invertir(a, b);
     };
 };
