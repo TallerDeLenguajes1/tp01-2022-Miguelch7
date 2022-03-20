@@ -8,15 +8,18 @@ void invertir(int *a, int *b);
 void orden(int *a, int *b);
 
 void main() {
-    int numA = 15;
-    int numB = 9;
+    int numA, numB;
 
-    printf("El valor de A es: %d y el valor de B es: %d \n", numA, numB);
+    printf("Ingrese un numero: ");
+    scanf("%d", &numA);
+
+    printf("Ingrese otro numero: ");
+    scanf("%d", &numB);
 
     orden(&numA, &numB);
 
-    printf("El nuevo valor de A (menor) es: %d \n", numA);
-    printf("El nuevo valor de B (mayor) es: %d \n", numB);
+    printf("El menor es: %d \n", numA);
+    printf("El mayor es: %d \n", numB);
 };
 
 // Definición de funciones
