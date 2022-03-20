@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Definición de funciones
+// Declaración de funciones
 int elevarAlCuadrado(int num);
 void elevarAlCuadradoVoid(int *num);
 void mostrarInfo(int var);
@@ -19,7 +19,7 @@ void main() {
     printf("El nuevo valor de B (mayor) es: %d \n", numB);
 };
 
-// Declaración de funciones
+// Definición de funciones
 int elevarAlCuadrado(int num) {
     return (num * num);
 };
