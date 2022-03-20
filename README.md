@@ -36,3 +36,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 ```
+
+## Punteros
+En el punto b) y c) se obtiene lo mismo debido a que el puntero apunta exactamente a la dirección de memoria de la variable.
+En el punto d) se obtiene la dirección de memoria del puntero, no es igual a las anteriores ya que el puntero es una variable más, por lo tanto se asigna en otra dirección de memoria. Es importante diferenciar la dirección de memoria de un puntero (d), a la dirección a la que el mismo apunta (b).
