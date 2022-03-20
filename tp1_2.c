@@ -4,11 +4,17 @@
 int elevarAlCuadrado(int num);
 void elevarAlCuadradoVoid(int *num);
 void mostrarInfo(int var);
+void invertir(int *a, int *b);
 
 void main() {
-    int num = 2;
+    int numA = 10;
+    int numB = 7;
 
-    mostrarInfo(num);
+    printf("El valor de A es: %d y el valor de B es: %d \n", numA, numB);
+
+    invertir(&numA, &numB);
+
+    printf("El nuevo valor de A es: %d y el nuevo valor de B es: %d", numA, numB);
 };
 
 // Declaración de funciones
@@ -23,4 +29,10 @@ void elevarAlCuadradoVoid(int *num) {
 void mostrarInfo(int var) {
     printf("La dirección de memoria de la variable es: %p \n", &var);
     printf("El contenido de la variable es: %d \n", var);
+};
+
+void invertir(int *a, int *b) {
+    int c = *a;
+    *a = *b;
+    *b = c;
 };
